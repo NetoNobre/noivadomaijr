@@ -3,7 +3,7 @@ import React from 'react';
 const CatalogoPresentes = () => {
 
   // Sua chave Pix
-  const chavePix = '07709574556'; // Substitua pela sua chave Pix
+  const chavePix = '71985025562'; // Substitua pela sua chave Pix
   // Função para copiar a chave Pix para a área de transferência
   const copyToClipboard = () => {
     navigator.clipboard.writeText(chavePix)
@@ -32,13 +32,13 @@ const CatalogoPresentes = () => {
 
           h1 {
             font-size: 5.5em;
-            color: #f2c22d;
+            color: #fa7f72;
             margin: 0;
           }
 
           .golden-details {
             font-size: 1.7em;
-            color: #f2c22d;
+            color: #f8d3cf;
             text-shadow: 2px 2px 5px rgb(0, 0, 0);
           }
 
@@ -51,7 +51,7 @@ const CatalogoPresentes = () => {
           }
 
           .gift-item {
-            background-color: #f2c22d;
+            background-color: #fa7f72;
             border: 1px solid #000000;
             border-radius: 10px;
             margin: 10px;
@@ -130,37 +130,47 @@ const CatalogoPresentes = () => {
       </style>
 
       <h1>Junior e Maiane</h1>
+      <p> <span className="golden-details"> Noivado e Chá de Casa Nova</span></p>
       <p>Local: <span className="golden-details">Rua Vicente Celestino, Condominio Vila Imperial</span></p>
-      <p>Hora: <span className="golden-details">15:00 <br /> Noivado e Chá de Casa Nova.</span></p>
+      <p>Hora: <span className="golden-details">15:00 </span></p>
 
       <h2>Lista de Presentes</h2>
 
       <h3>Eletrodomésticos</h3>
       <div className="gift-list">
-        {['Air fryer', 'Aspirador de pó', 'Batedeira', 'Churrasqueira elétrica', 'Ferro de passar', 'Fogão cooktop elétrico', 'Geladeira', 'Grill', 'Micro-ondas', 'Pipoqueira', 'Processador de alimentos', 'Sanduicheira elétrica', 'Televisão', 'Ventilador'].map((item, index) => (
+        {['Air fryer', 'Aspirador de pó', 'Batedeira', 'Ferro de passar', 'Geladeira', 'Micro-ondas', 'Sanduicheira elétrica', 'Televisão', 'Ventilador'].map((item, index) => (
           <div key={index} className="gift-item">{item}</div>
         ))}
       </div>
 
       <h3>Itens para o Banheiro</h3>
       <div className="gift-list">
-        {['Conjunto de acessórios', 'Conjunto de limpeza', 'Jogo de toalhas', 'Kit saboneteira', 'Lixeira para banheiro', 'Porta-escovas de dentes', 'Tapete para banheiro', 'Espelho'].map((item, index) => (
+        {['Conjunto de acessórios', 'Jogo de toalhas', 'Jogo de toalhas', 'Jogo de toalhas', 'Tapete para banheiro', 'MOP'].map((item, index) => (
           <div key={index} className="gift-item">{item}</div>
         ))}
       </div>
 
-      <h3>Acessórios de Cozinha e de Servir</h3>
+      <h3>Quarto e Sala</h3>
       <div className="gift-list">
         {[  
-          'Açucareiro', 'Afiador de facas', 'Aparelho de jantar', 'Assadeiras', 'Baldes de pipoca', 'Bandejas', 'Bowls (tigelas)', 
-          'Colher de pau, Concha', 'Conjunto de copos', 'Conjunto de sousplat', 'Conjunto de talheres', 'Conjunto de taças',
-          'Conjunto para sobremesas', 'Descanso para panelas', 'Escorredor de arroz ou macarrão', 'Escorredor de louça', 
-          'Escumadeira, Espagueteira', 'Espremedor de alho', 'Faqueiro', 'Formas de pudim', 'Frigideiras antiaderentes', 
-          'Fruteira', 'Fue', 'Garrafa térmica', 'Jogo americano', 'Jogo de panelas', 'Xícaras', 'Kit churrasco', 'Lixeira para cozinha'
+          'Cama', 'Espelho', 'Jogo de cama de casal', 'Tábua de passar', 'Jogo de cama de casal', 'Ededrom casal', 'Ededrom casal', 'Travesseiros', 'Travesseiros', 'Almofadas', 'Almofadas', 'Cortina Blackout', 'Cortina Blackout'
         ].map((item, index) => (
           <div key={index} className="gift-item">{item}</div>
         ))}
       </div>
+
+      <h4>Acessórios de Cozinha e de Servir</h4>
+      <div className="gift-list">
+        {[  
+          'Kit Utensilios em silicone', 'Kit Utensilios em inox', 'Panela de pressão', 'Jogo de pratos de vidro', 'Aparelho de jantar', 'Assadeiras', 'Bowls (tigelas)', 
+          'Conjunto de copos', 'Conjunto de talheres', 'Conjunto de copos', 'Conjunto de talheres', 'Conjunto de taças',
+          'Conjunto para sobremesas', 'Descanso para panelas', 'Escorredor de louça', 'Jarra para suco', 'Jogo americano',
+          'Jogo de facas', 'Frigideiras antiaderentes pequena', 'Frigideiras antiaderentes média', 'Frigideiras antiaderentes grande', 'Kit Porta-Condimentos', 'Cuscuzeiro', 
+          'Fruteira', 'Garrafa térmica', 'Jogo de panelas', 'Jogo de panelas', 'Lixeira para cozinha'
+        ].map((item, index) => (
+          <div key={index} className="gift-item">{item}</div>
+        ))}
+      </div> 
 
       <div className="pix-copy">
         <h2>Chave Pix</h2>
