@@ -18,7 +18,7 @@ const CatalogoPresentes = () => {
   };
 
   // Lista de presentes escolhidos
-  const presentesEscolhidos = ['Televisão', 'MOP', 'Ventilador', 'Cortina Blackout'];
+  const presentesEscolhidos = ['Televisão', 'MOP', 'Ventilador', 'Cortina Blackout', 'Sanduicheira elétrica'];
 
   // Função que verifica se um presente já foi escolhido
   const isEscolhido = (presente) => presentesEscolhidos.includes(presente);
