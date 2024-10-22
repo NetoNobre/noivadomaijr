@@ -1,9 +1,11 @@
+import { FaCircleCheck } from "react-icons/fa6";
 import React from 'react';
 
 const CatalogoPresentes = () => {
 
   // Sua chave Pix
   const chavePix = '71985025562'; // Substitua pela sua chave Pix
+  
   // Função para copiar a chave Pix para a área de transferência
   const copyToClipboard = () => {
     navigator.clipboard.writeText(chavePix)
@@ -14,6 +16,12 @@ const CatalogoPresentes = () => {
         console.error('Erro ao copiar: ', err);
       });
   };
+
+  // Lista de presentes escolhidos
+  const presentesEscolhidos = ['Televisão', 'MOP', 'Ventilador', 'Cortina Blackout'];
+
+  // Função que verifica se um presente já foi escolhido
+  const isEscolhido = (presente) => presentesEscolhidos.includes(presente);
 
   return (
     <div style={{ fontFamily: "'Playfair Display', serif", backgroundColor: '#f7e7e7', textAlign: 'center', padding: '20px' }}>
@@ -139,38 +147,44 @@ const CatalogoPresentes = () => {
       <h3>Eletrodomésticos</h3>
       <div className="gift-list">
         {['Air fryer', 'Aspirador de pó', 'Batedeira', 'Ferro de passar', 'Geladeira', 'Micro-ondas', 'Sanduicheira elétrica', 'Televisão', 'Ventilador'].map((item, index) => (
-          <div key={index} className="gift-item">{item}</div>
+          <div key={index} className="gift-item">
+            {item} {isEscolhido(item) && <FaCircleCheck style={{ color: 'green', marginLeft: '8px' }} />}
+          </div>
         ))}
       </div>
 
       <h3>Itens para o Banheiro</h3>
       <div className="gift-list">
-        {['Conjunto de acessórios', 'Jogo de toalhas', 'Jogo de toalhas', 'Jogo de toalhas', 'Tapete para banheiro', 'MOP'].map((item, index) => (
-          <div key={index} className="gift-item">{item}</div>
+        {['Conjunto de acessórios', 'Jogo de toalhas', 'Tapete para banheiro', 'MOP'].map((item, index) => (
+          <div key={index} className="gift-item">
+            {item} {isEscolhido(item) && <FaCircleCheck style={{ color: 'green', marginLeft: '8px' }} />}
+          </div>
         ))}
       </div>
 
       <h3>Quarto e Sala</h3>
       <div className="gift-list">
-        {[  
-          'Cama', 'Espelho', 'Jogo de cama de casal', 'Tábua de passar', 'Jogo de cama de casal', 'Ededrom casal', 'Ededrom casal', 'Travesseiros', 'Travesseiros', 'Almofadas', 'Almofadas', 'Cortina Blackout', 'Cortina Blackout'
+        {[
+          'Cama', 'Espelho', 'Jogo de cama de casal', 'Tábua de passar', 'Ededrom casal', 'Travesseiros', 'Almofadas', 'Cortina Blackout'
         ].map((item, index) => (
-          <div key={index} className="gift-item">{item}</div>
+          <div key={index} className="gift-item">
+            {item} {isEscolhido(item) && <FaCircleCheck style={{ color: 'green', marginLeft: '8px' }} />}
+          </div>
         ))}
       </div>
 
       <h4>Acessórios de Cozinha e de Servir</h4>
       <div className="gift-list">
-        {[  
-          'Kit Utensilios em silicone', 'Kit Utensilios em inox', 'Panela de pressão', 'Jogo de pratos de vidro', 'Aparelho de jantar', 'Assadeiras', 'Bowls (tigelas)', 
-          'Conjunto de copos', 'Conjunto de talheres', 'Conjunto de copos', 'Conjunto de talheres', 'Conjunto de taças',
-          'Conjunto para sobremesas', 'Descanso para panelas', 'Escorredor de louça', 'Jarra para suco', 'Jogo americano',
-          'Jogo de facas', 'Frigideiras antiaderentes pequena', 'Frigideiras antiaderentes média', 'Frigideiras antiaderentes grande', 'Kit Porta-Condimentos', 'Cuscuzeiro', 
-          'Fruteira', 'Garrafa térmica', 'Jogo de panelas', 'Jogo de panelas', 'Lixeira para cozinha'
+        {[
+          'Kit Utensilios em silicone', 'Panela de pressão', 'Aparelho de jantar', 'Assadeiras', 'Bowls (tigelas)',
+          'Conjunto de copos', 'Conjunto de talheres', 'Conjunto de taças', 'Descanso para panelas', 'Jogo americano',
+          'Jogo de facas', 'Frigideiras antiaderentes pequena', 'Kit Porta-Condimentos', 'Fruteira', 'Garrafa térmica', 'Lixeira para cozinha'
         ].map((item, index) => (
-          <div key={index} className="gift-item">{item}</div>
+          <div key={index} className="gift-item">
+            {item} {isEscolhido(item) && <FaCircleCheck style={{ color: 'green', marginLeft: '8px' }} />}
+          </div>
         ))}
-      </div> 
+      </div>
 
       <div className="pix-copy">
         <h2>Chave Pix</h2>
