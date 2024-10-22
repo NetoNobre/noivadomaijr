@@ -18,7 +18,7 @@ const CatalogoPresentes = () => {
   };
 
   // Lista de presentes escolhidos
-  const presentesEscolhidos = ['Televisão', 'MOP', 'Ventilador', 'Cortina Blackout', 'Sanduicheira elétrica'];
+  const presentesEscolhidos = ['Televisão', 'MOP', 'Ventilador', 'Cortina Blackout', 'Sanduicheira elétrica', 'Conjunto de copos', 'Kit Utensilios em silicone', 'Cuscuzeiro'];
 
   // Função que verifica se um presente já foi escolhido
   const isEscolhido = (presente) => presentesEscolhidos.includes(presente);
@@ -165,7 +165,7 @@ const CatalogoPresentes = () => {
       <h3>Quarto e Sala</h3>
       <div className="gift-list">
         {[
-          'Cama', 'Espelho', 'Jogo de cama de casal', 'Tábua de passar', 'Ededrom casal', 'Travesseiros', 'Almofadas', 'Cortina Blackout'
+          'Cama', 'Espelho', 'Jogo de cama de casal', 'Tábua de passar', 'Ededrom casal', 'Travesseiros', 'Almofadas', 'Cortina Blackout', 'Cortina Blackoutt'
         ].map((item, index) => (
           <div key={index} className="gift-item">
             {item} {isEscolhido(item) && <FaCircleCheck style={{ color: 'green', marginLeft: '8px' }} />}
@@ -177,7 +177,7 @@ const CatalogoPresentes = () => {
       <div className="gift-list">
         {[
           'Kit Utensilios em silicone', 'Panela de pressão', 'Aparelho de jantar', 'Assadeiras', 'Bowls (tigelas)',
-          'Conjunto de copos', 'Conjunto de talheres', 'Conjunto de taças', 'Descanso para panelas', 'Jogo americano',
+          'Conjunto de copos', 'Conjunto de talheres', 'Conjunto de taças', 'Cuscuzeiro', 'Descanso para panelas', 'Jogo americano',
           'Jogo de facas', 'Frigideiras antiaderentes pequena', 'Kit Porta-Condimentos', 'Fruteira', 'Garrafa térmica', 'Lixeira para cozinha'
         ].map((item, index) => (
           <div key={index} className="gift-item">
