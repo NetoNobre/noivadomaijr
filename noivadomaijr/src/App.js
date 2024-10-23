@@ -176,7 +176,7 @@ const CatalogoPresentes = () => {
       <h4>Acessórios de Cozinha e de Servir</h4>
       <div className="gift-list">
         {[
-          'Kit Utensilios em silicone', 'Kit Utensilios em inox', 'Panela de pressão', 'Aparelho de jantar', 'Aparelho de jantar.' 'Assadeiras', 'Bowls (tigelas)',
+          'Kit Utensilios em silicone', 'Kit Utensilios em inox', 'Panela de pressão', 'Aparelho de jantar', 'Aparelho de jantar.', 'Assadeiras', 'Bowls (tigelas)',
           'Conjunto de copos', 'Conjunto de talheres', 'Conjunto de taças', 'Cuscuzeiro', 'Descanso para panelas', 'Jogo americano',
           'Jogo de facas', 'Frigideiras antiaderente pequena', 'Frigideiras antiaderente média', 'Frigideiras antiaderente grande', 'Kit Porta-Condimentos', 'Fruteira', 'Garrafa térmica', 'Lixeira para cozinha'
         ].map((item, index) => (
