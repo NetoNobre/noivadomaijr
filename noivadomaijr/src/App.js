@@ -18,7 +18,7 @@ const CatalogoPresentes = () => {
   };
 
   // Lista de presentes escolhidos
-  const presentesEscolhidos = ['Televisão', 'MOP', 'Ventilador', 'Cortina Blackout', 'Sanduicheira elétrica', 'Conjunto de copos', 'Kit Utensilios em silicone', 'Cuscuzeiro'];
+  const presentesEscolhidos = ['Televisão', 'MOP', 'Ventilador', 'Cortina Blackout', 'Sanduicheira elétrica', 'Conjunto de copos', 'Kit Utensilios em silicone', 'Cuscuzeiro', 'Aparelho de jantar'];
 
   // Função que verifica se um presente já foi escolhido
   const isEscolhido = (presente) => presentesEscolhidos.includes(presente);
@@ -176,7 +176,7 @@ const CatalogoPresentes = () => {
       <h4>Acessórios de Cozinha e de Servir</h4>
       <div className="gift-list">
         {[
-          'Kit Utensilios em silicone', 'Panela de pressão', 'Aparelho de jantar', 'Assadeiras', 'Bowls (tigelas)',
+          'Kit Utensilios em silicone', 'Kit Utensilios em inox', 'Panela de pressão', 'Aparelho de jantar', 'Aparelho de jantar.' 'Assadeiras', 'Bowls (tigelas)',
           'Conjunto de copos', 'Conjunto de talheres', 'Conjunto de taças', 'Cuscuzeiro', 'Descanso para panelas', 'Jogo americano',
           'Jogo de facas', 'Frigideiras antiaderente pequena', 'Frigideiras antiaderente média', 'Frigideiras antiaderente grande', 'Kit Porta-Condimentos', 'Fruteira', 'Garrafa térmica', 'Lixeira para cozinha'
         ].map((item, index) => (
