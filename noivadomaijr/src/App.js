@@ -155,7 +155,7 @@ const CatalogoPresentes = () => {
 
       <h3>Itens para o Banheiro</h3>
       <div className="gift-list">
-        {['Conjunto de acessórios', 'Jogo de toalhas', 'Tapete para banheiro', 'MOP'].map((item, index) => (
+        {['Conjunto de acessórios', 'Jogo de toalhas', 'Jogo de toalha', 'Tapete para banheiro', 'MOP'].map((item, index) => (
           <div key={index} className="gift-item">
             {item} {isEscolhido(item) && <FaCircleCheck style={{ color: 'green', marginLeft: '8px' }} />}
           </div>
@@ -178,7 +178,7 @@ const CatalogoPresentes = () => {
         {[
           'Kit Utensilios em silicone', 'Panela de pressão', 'Aparelho de jantar', 'Assadeiras', 'Bowls (tigelas)',
           'Conjunto de copos', 'Conjunto de talheres', 'Conjunto de taças', 'Cuscuzeiro', 'Descanso para panelas', 'Jogo americano',
-          'Jogo de facas', 'Frigideiras antiaderentes pequena', 'Kit Porta-Condimentos', 'Fruteira', 'Garrafa térmica', 'Lixeira para cozinha'
+          'Jogo de facas', 'Frigideiras antiaderente pequena', 'Frigideiras antiaderente média', 'Frigideiras antiaderente grande', 'Kit Porta-Condimentos', 'Fruteira', 'Garrafa térmica', 'Lixeira para cozinha'
         ].map((item, index) => (
           <div key={index} className="gift-item">
             {item} {isEscolhido(item) && <FaCircleCheck style={{ color: 'green', marginLeft: '8px' }} />}
