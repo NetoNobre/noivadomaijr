@@ -18,7 +18,7 @@ const CatalogoPresentes = () => {
   };
 
   // Lista de presentes escolhidos
-  const presentesEscolhidos = ['Televisão', 'MOP', 'Ventilador', 'Aspirador de pó', 'Panela de pressão', 'Tapete para banheiro', 'Cortina Blackout', 'Lixeira para cozinha', 'Sanduicheira elétrica', 'Conjunto de copos', 'Kit Utensilios em silicone', 'Kit Utensilios em inox', 'Cuscuzeiro', 'Aparelho de jantar'];
+  const presentesEscolhidos = ['Televisão', 'MOP', 'Fruteira', 'Frigideiras antiaderente média', 'Ventilador', 'Aspirador de pó', 'Panela de pressão', 'Tapete para banheiro', 'Cortina Blackout', 'Lixeira para cozinha', 'Sanduicheira elétrica', 'Conjunto de copos', 'Kit Utensilios em silicone', 'Kit Utensilios em inox', 'Cuscuzeiro', 'Aparelho de jantar'];
 
   // Função que verifica se um presente já foi escolhido
   const isEscolhido = (presente) => presentesEscolhidos.includes(presente);
